@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mezzo.service", "mezzo.serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mezzo.api", "mezzo.api\mezzo.api.csproj", "{9988AA38-2EA7-43D4-83A6-2A6E40F55BBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mezzo.dto", "mezzo.dto\mezzo.dto.csproj", "{55941010-00D9-42DE-BB6C-F5E9EFE593EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mezzo.test", "mezzo.test\mezzo.test.csproj", "{0E5CB3AC-0DD0-4B9F-9AFD-4E5C2F859F93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{9988AA38-2EA7-43D4-83A6-2A6E40F55BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9988AA38-2EA7-43D4-83A6-2A6E40F55BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9988AA38-2EA7-43D4-83A6-2A6E40F55BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55941010-00D9-42DE-BB6C-F5E9EFE593EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55941010-00D9-42DE-BB6C-F5E9EFE593EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55941010-00D9-42DE-BB6C-F5E9EFE593EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55941010-00D9-42DE-BB6C-F5E9EFE593EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5CB3AC-0DD0-4B9F-9AFD-4E5C2F859F93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5CB3AC-0DD0-4B9F-9AFD-4E5C2F859F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5CB3AC-0DD0-4B9F-9AFD-4E5C2F859F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5CB3AC-0DD0-4B9F-9AFD-4E5C2F859F93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
