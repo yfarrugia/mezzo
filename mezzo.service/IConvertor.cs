@@ -12,12 +12,8 @@ namespace mezzo.service
 
         double RadiansToDegrees(double radians);
 
-        decimal DegreesToDecimals(double degrees);
+        double[] RadiansToCartesian(double radLatitude, double radLongitude);
 
-        double DecimalsToRadians(decimal decimals);
-
-        decimal DegreesToCartesian(double degrees);
-
-        double CartesianToDegrees(decimal cartesian);
+        double[] CartesianToRadians(double[] cartesian);
     }
 }

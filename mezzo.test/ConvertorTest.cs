@@ -11,9 +11,7 @@ namespace mezzo.test
         
         [TestMethod]
         public void DegreesToRadiansTest()
-        {
-            //Input: Latitude and Longitude in Degrees
-            //Output: Latitude and Longitude in Radians
+        {           
             var radians = convert.DegreesToRadians(120);
 
             Assert.IsNotNull(radians);
@@ -23,47 +21,38 @@ namespace mezzo.test
         
         [TestMethod]
         public void RadiansToDegreesTest()
-        {
-            //Input: Latitude and Longitude in Radians
-            //Output: Latitude and Longitude in Degrees
+        {           
             var degrees = convert.RadiansToDegrees(1.57);
 
             Assert.IsNotNull(degrees);
             Assert.IsTrue(degrees < 90);
             Assert.IsTrue(degrees > 89.9);
-            Assert.IsTrue(degrees == 89.954373835539258);
+            Assert.IsTrue(degrees == 89.954373835539243);            
         }
 
         [TestMethod]
-        public void DegreesToDecimalsTest()
+        public void RadiansToCartesian()
         {
-            //Input: Latitude and Longitude in Degrees
-            //Output: Latitude and Longitude in Decimals
-            var decimals = convert.DegreesToDecimals(123);
+            var cartesian = convert.RadiansToCartesian(0.73091096, -1.5294285);
+
+            Assert.IsNotNull(cartesian);
+            Assert.IsTrue(cartesian.Length == 3);
+            Assert.IsTrue(cartesian[0] > 0.03079231);
+            Assert.IsTrue(cartesian[1] < -0.74392960);
+            Assert.IsTrue(cartesian[2] > 0.66754818);            
         }
 
         [TestMethod]
-        public void DecimalsToRadiansTest()
+        public void CartesianToRadians()
         {
-            //Input: Latitude and Longitude in Decimals
-            //Output: Latitude and Longitude in Radians
-            var radians = convert.DecimalsToRadians(123);
-        }
+            var carty = new double[3] { 0.12824063, -0.75020731, 0.64125282 };
+            
+            var degrees = convert.CartesianToRadians(carty);
 
-        [TestMethod]
-        public void DegreesToCartesianTest()
-        {
-            //Input: Latitude and Longitude in Degrees
-            //Output: Latitude and Longitude in Cartesian
-            var cartesian = convert.DegreesToCartesian(111);             
-        }
-
-        [TestMethod]
-        public void CartesianToDegreesTest()
-        {
-            //Input: Latitude and Longitude in Degrees
-            //Output: Latitude and Longitude in Cartesian
-            var degrees = convert.CartesianToDegrees(123);            
+            Assert.IsNotNull(degrees);
+            Assert.IsTrue(degrees.Length == 2);
+            Assert.IsTrue(degrees[1] < -1.40149245);
+            Assert.IsTrue(degrees[0] > 0.70015084);
         }
     }
 }
