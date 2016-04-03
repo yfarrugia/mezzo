@@ -41,7 +41,15 @@
   <ItemGroup>
     <Compile Include="Convertor.cs" />
     <Compile Include="IConvertor.cs" />
+    <Compile Include="IMidPointFinder.cs" />
+    <Compile Include="MidPointFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mezzo.dto\mezzo.dto.csproj">
+      <Project>{55941010-00d9-42de-bb6c-f5e9efe593ee}</Project>
+      <Name>mezzo.dto</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

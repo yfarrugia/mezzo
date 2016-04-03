@@ -50,10 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="MidPointFinderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ConvertorTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\mezzo.dto\mezzo.dto.csproj">
+      <Project>{55941010-00d9-42de-bb6c-f5e9efe593ee}</Project>
+      <Name>mezzo.dto</Name>
+    </ProjectReference>
     <ProjectReference Include="..\mezzo.service\mezzo.service.csproj">
       <Project>{4637b3c0-67d9-4395-8702-87a215b63b68}</Project>
       <Name>mezzo.service</Name>

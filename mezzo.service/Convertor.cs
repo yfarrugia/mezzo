@@ -66,7 +66,7 @@ namespace mezzo.service
             double[] radians = new double[2];
             
             var longitude = Math.Atan2(cartesian[1], cartesian[0]);
-            var hyp = Math.Sqrt(cartesian[0] * (cartesian[0] + cartesian[1]) * cartesian[1]);
+            var hyp = Math.Sqrt((cartesian[0] * cartesian[0]) + (cartesian[1] * cartesian[1]));
             var latitude = Math.Atan2(cartesian[2], hyp);
 
             radians[0] = latitude;
